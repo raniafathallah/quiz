@@ -1,38 +1,281 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background:#fff0f0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  *{
+    
+    font-family: 'Urbanist', sans-serif;
   }
-  to {
-    transform: rotate(360deg);
-  }
+#root{
+  WIDTH: 35%;
+  BACKGROUND: #fffefe;
+  POSITION: RELATIVE;
+  TOP: 50%;
+  LEFT: 33%;
+ overflow: auto;
+  height: auto;
+  margin-top: 10px;
 }
+#root>div{margin: 5% auto !important; background: #eee;
+  box-shadow:  2px 9px 9px #4e4c4c;
+  padding: 10px;
+  overflow: auto;
+}
+.bg-dark{
+  background-color: #eee  !important;
+}
+.mt-4.list-group{background: #eee !important;}
+.BtnsRight{
+  float: right !important;
+}
+.nav{
+  DISPLAY: INLINE-BLOCK;
+  FLOAT: RIGHT;
+  position: absolute;
+  right: 0px;
+  top: 27%;
+}
+
+    .NavParent.nav{
+     float: right !important;
+    } 
+    .navbar.navbar-dark.bg-dark,
+    .navbar{
+      BACKGROUND: #fff !important;
+    color: #000;
+    }
+
+    .navbar-dark .navbar-brand {
+      color: #000  !important;
+      font-size: 26px;
+      letter-spacing: 3px;
+ 
+    
+      
+  }
+
+.AddBtn{  
+  BACKGROUND: NONE;
+  BORDER: NONE;
+  COLOR: #000;
+color: #174d83  !important;
+}
+.editIcon{color: #1c6a22d9;}
+.deleteIcon{color: #ff0030;}
+.NavParent{    
+  background: #eee;}
+
+
+ .DateLeft{
+   float: left;
+    height: 100%;
+ }
+ .RightBar{
+   display: inline-flex;
+ }
+
+  .Title
+  {  font-weight: bold;
+
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: rgb(0 0 0 / 70%);
+  }
+    .Details{
+      font-size: 14px;
+    color: rgb(0 0 0 / 60%);
+    text-align: justify;
+    font-weight: bold;
+    }
+    .ml-auto{
+      float: right;
+    }
+
+    .list-group-item:first-child{margin-bottom: 18px; 
+    }
+    .mt-4.list-group>li{   border-left: 12px solid #c94646 !important;border-radius: 5%;}
+
+    .Completed{
+      position: absolute;
+      top: 6%;
+      right: 5%;
+      font-weight: bold;
+      opacity: 0.8;
+      font-family: monospace;
+      text-transform: capitalize;
+  }
+    .SubmitBtn,.CancelBtn{
+      float: right;
+      margin-right: 8px;
+    }
+    .SubmitBtn{color: green;} */
+
+
+
+
+
+
+
+
+
+    .App {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    body{
+      background:#2ba8b5  !important;
+      text-align: center;
+      color: #fff !important;
+    }
+  
+    .card{
+      width: 50%;
+      position: relative;
+      left: 25%;
+       background: #f7ecec !important; 
+       margin: 38px 0px 17px 0px ;
+       box-shadow: 2px 3px 9px #121010;
+   
+    }
+    .card-body{
+      /* padding: 0px !important; */
+    }
+    .card-text,.card-title{   
+       color: #177883;
+       text-align: left;
+      margin: 1%;
+    }
+    .card-text{
+      font-weight: bold;
+      opacity: .7;
+      text-align: left;
+    }
+    
+    .card-subtitle{   
+       position: absolute;
+      right: 2%;
+      top: -31px;
+      border-radius: 50% 50%;
+      font-weight: bold;
+      background: rgb(0 0 0 / 29%);
+      color: #fff;
+      padding: 5px !important;
+    
+    }
+    
+    
+      .All_Questions{
+        overflow: auto;
+        height: auto;
+        background: #fff;
+        text-align: left;
+        color:#000 !important;
+        padding: 5px 15px;
+        border-radius: 2px 25px;
+      }
+      .All_Questions>Question{ 
+        text-transform: capitalize;
+      }
+    
+    
+    
+      /* nav */
+    
+      .nav-link {
+        color: #ebecef;
+      }
+      .nav.nav-pills{
+        background: #fffefe;
+        padding: 0% 2%;}
+    
+       
+    .nav-pills .nav-link {
+      color: #2babb9;
+    }
+    .nav-link:focus, .nav-link:hover {
+      color: rgb(35, 149, 161,.7) !important;
+      font-weight: bold;
+    }
+    
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+      color: #fff;
+      background-color: #0e93a1 !important;
+      margin-top:8px;
+    }
+    
+    .bg-dark {
+      background-color:#fff !important;
+    }
+
+    /* form formik */
+
+.fromFormik {
+      width: 50%;
+      position: relative;
+      left: 25%;
+      top: 20px;
+      background: #fff;
+      padding: 2%;
+    
+    }
+.MuiCardContent-root {    background: #0e93a1;height: 700px;}
+      .InputField{
+        width:100%  !important
+      }
+
+      .AddQuestion{
+        float: right;
+        font-size: 12px !IMPORTANT;
+        background: #0e93a1 !important;
+        color: #eee !important;
+        font-weight: bold !IMPORTANT;
+        padding: 5px !important;
+      }
+      .SubmitBtn,.CancelBtn{float: right;}
+
+      /* .SubmitBtn{background-color: #15a6b5  !important; margin: 0px 5px ;} */
+
+      .TimeDivs{
+        color: #706868;
+        width: 40% !important;
+        font-weight: 600;
+        float: left;
+      }
+      .editIcon{    position: absolute;
+        right: 5%;
+        top: 59%;
+        color: #329b30;}
+
+        .MuiGrid-root.MuiGrid-item>input{
+          border: 2px solid #c2cccd;
+      
+        }
+ 
+        .Error{
+          padding: 2%;
+          margin: 0px;
+          color: red;
+        }
+.SubmitBtn
+        {
+          float: right;
+          margin: 2% 0% 2% 2%;
+          background: #166685;
+          background-color: #166685 !important;
+          color: #eee;
+          border-radius: 5px;
+          box-shadow: none;
+          border: navajowhite;
+          font-size: 18px;
+        }
+        .QuestionsDV{
+          margin:2%;
+        }
